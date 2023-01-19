@@ -24,18 +24,31 @@
 
 footer {
   background-color: #cddc39;
-  font-size: 1.5em;
-  padding: 1em;
+  font-size: 14px;
+  padding: 10px;
   font-family: fantasy;
+  width: 100%;
+  margin-top: 1em;
 }
 
 footer span {
   color: #ff5722;
 }
+
 .spinner-style {
   position: relative;
   width: 70px;
   height: 70px;
   display: block;
   margin: auto;
+}
+
+.redux-block {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.redux-block h3 {
+  margin: 0px 10px;
 }

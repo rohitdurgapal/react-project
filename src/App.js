@@ -1,18 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ProductListing from './components/home-page/ProductListing';
+import ReduxPractice from './components/redux-practice/ReduxPractice';
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <div className='container'>
-        <ProductListing />
-      </div>
-      <Footer />
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <div className='container'>
+          <Routes>
+            <Route path="/" element={<ProductListing />} />
+            <Route path="/redux" element={<ReduxPractice />} />
+          </Routes>
+        </div>
+        <Footer />
 
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
