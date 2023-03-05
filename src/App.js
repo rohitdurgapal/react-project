@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ProductListing from './components/home-page/ProductListing';
 import ReduxPractice from './components/redux-practice/ReduxPractice';
+import Chart from './components/charts/Charts'
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +17,7 @@ function App() {
             <Route path="/redux" element={<ReduxPractice />} />
           </Routes>
         </div>
+        <Chart />
         <Footer />
 
       </div>

@@ -6,7 +6,8 @@ export default function Products() {
             <>
                 <div className="spinner-style spinner-border text-primary" role="status">
                     <span className="visually-hidden">Loading...</span>
-                </div></>
+                </div>
+            </>
         )
     }
     const [productsfetch, setProductsFetch] = useState([]);
@@ -35,7 +36,6 @@ export default function Products() {
         <>
             {loader ? <Loader /> : productsfetch.map(({ id, title, description, images }) => (
                 <div className="col-md-3" key={id}>
-
                     <div className='card p-3 mb-3'>
                         <div className='text-center'>
                             <img src={images[0]} className="card-img-top" alt={title} />
